@@ -203,12 +203,24 @@ ul{
 
   
 }
-#cardbox.show{
+#cardbox.shows{
 	
 	margin-left:0%;
 	opacity:1;
   
 }
+
+.table,
+.table tr,
+.table td {
+    background-color: white !important;	
+}
+
+.table{
+	opacity:0.7!important;
+	padding-top:10%!important;
+}
+
 
 
 

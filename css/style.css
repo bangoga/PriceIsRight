@@ -152,7 +152,6 @@ ul{
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
         transform: scale(1.05);
-
         transition:all 0.3s ease-in-out;	
 }
 
@@ -195,8 +194,23 @@ ul{
 	top:10%;
 	background:url(file:///C|/TemplateWebsite2/Items/SilverBall.JPG);
 	background-size:contain;
-    
+	transition: all .75s ease;
 }
+
+#cardbox.fade{
+  margin-left:25%; 	
+  opacity: 0;
+
+  
+}
+#cardbox.show{
+	
+	margin-left:0%;
+	opacity:1;
+  
+}
+
+
 
 
 

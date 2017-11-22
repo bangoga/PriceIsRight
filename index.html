@@ -90,9 +90,9 @@
             
             </div>
         	<div id="boxbottons">
-            <button type="button" id="slide" class="btn btn-default">    Toggle    </button>
-            <button type="button" class="btn btn-default">    Default    </button>
-            <button type="button" class="btn btn-default">    Default    </button>
+            <button  type="button" id="slide" class="btn btn-default">    Toggle    </button>
+            <button id ="but3" type="button" class="btn btn-default">    Default    </button>
+            <button id ="but4" type="button" class="btn btn-default">    Default    </button>
             </div>
         </div>
      </div>
@@ -103,10 +103,18 @@
 <!-- JavaScript -->
    <script>
    $(document).ready(function(){
-	    var imgurl = pickrandom();
+	    var obj = pickrandom();
+		var imgurl = obj[0];
 		$("#cardbox").css('background-image', 'url(' + imgurl + ')');
+		$("#slide").text(obj[1]);
+		$("#but3").text(obj[2]);
+		$("#but4").text(obj[3]);
  		$("#slide").on("click", function(){
-			var imgurl = pickrandom();
+			var obj = pickrandom();
+			var imgurl = obj[0];
+			$("#slide").text(obj[1]);
+			$("#but3").text(obj[2]);
+			$("#but4").text(obj[3]);
     		$("#cardbox").addClass("fade").delay(1000).queue(function(next) {
   				$(this).removeClass("fade");
  				 next();

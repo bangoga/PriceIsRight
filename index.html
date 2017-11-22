@@ -103,10 +103,14 @@
 <!-- JavaScript -->
    <script>
    $(document).ready(function(){
+	    var imgurl = pickrandom();
+		$("#cardbox").css('background-image', 'url(' + imgurl + ')');
  		$("#slide").on("click", function(){
+			var imgurl = pickrandom();
     		$("#cardbox").addClass("fade").delay(1000).queue(function(next) {
   				$(this).removeClass("fade");
  				 next();
+				 $("#cardbox").css('background-image', 'url(' + imgurl + ')');
 			});
 		});
 	});
